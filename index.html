@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Will & Company website, by Cody Davey 3/21/2017 -->
+
+<html>
+	<head>
+		<link href="styles.css" type="text/css" rel="stylesheet" />
+		<title> Will & Co. Cafe</title>
+		
+		<script type = "text/javascript">
+			function toggleMenu() {
+				console.log(document.getElementsByClassName("nav")[0].style.display)
+				if(document.getElementsByClassName("nav")[0].style.display != "block") {
+					document.getElementsByClassName("nav")[0].style.display = "block";
+				}
+				else {
+					document.getElementsByClassName("nav")[0].style.display = "none";
+				}
+			}
+			
+			function watchMediaQuery(mq) {
+				if (mq.matches) {
+					document.getElementsByClassName("nav")[0].style.display = "block";
+				}
+				else {
+					document.getElementsByClassName("nav")[0].style.display = "none";
+				}
+			}
+			
+			var mq = window.matchMedia("screen and (min-width: 721px)");
+			mq.addListener(watchMediaQuery);
+		</script>
+		
+	</head>
+	<body>
+	
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div class = "header">
+			<a href = "index.html"><h1> Will & Co. Cafe</h1></a>
+		</div>
+		
+		<div class = "menu" onclick = "toggleMenu()">
+			Menu
+		</div>
+		
+		<div class = "nav">
+			<a href = "about.html"><div class = "navlink">About Us</div></a>
+			<a href = "menu.html"><div class = "navlink">Menu</div></a>
+			<a href = "calender.html"><div class = "navlink">Calender</div></a>
+			<a href = "contact.html"><div class = "navlink">Contact Us</div></a>
+		</div>
+		
+		<div class = "splash">
+			<div id = "indexImage">
+				<img src="fakeImage.png" alt="image" />
+			</div>
+			
+			<div class = "information">
+				<h3>Hours</h3>
+				<ul>
+					<li>
+						Sunday: 7:30 A.M. - 3:00 P.M.
+					</li>
+					<li>
+						Monday: Closed
+					</li>
+					<li>
+						Tuesday: 7:30 A.M. - 3:00 P.M.
+					</li>
+					<li>
+						Wednesday: 7:30 A.M. - 3:00 P.M.
+					</li>
+					<li>
+						Thursday: 7:30 A.M. - 3:00 P.M.
+					</li>
+					<li>
+						Friday: 7:30 A.M. - 3:00 P.M.
+					</li>
+					<li>
+						Saturday : 7:30 A.M. - 3:00 P.M.
+					</li>
+					</br>
+						Midnight Breakfast Coming Soon
+				</ul>
+				<h3>Location</h3>
+				<p>6b Court Street Plymouth, MA. 02360</p>
+			</div>
+		</div>
+		
+		<div class = "findus">
+			<h3>Find Us On</h3>
+			<div class="fb-page" data-href="https://www.facebook.com/Will-Co-Cafe-242153259531491/" 
+			data-width="300" data-height="200" data-small-header="false" 
+			data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+			<blockquote cite="https://www.facebook.com/Will-Co-Cafe-242153259531491/" 
+			class="fb-xfbml-parse-ignore">
+			<a href="https://www.facebook.com/Will-Co-Cafe-242153259531491/">Will &amp; Co. Cafe</a></blockquote></div>
+		</div>
+		
+		<div class = "footer">
+			&copy; 2017 Will&Co Cafe. All Rights Reserved.
+		</div>
+	</body>
+</html>

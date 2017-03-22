@@ -1,0 +1,104 @@
+.header{
+	min-height: 90px;
+	background-color: #00ace6;
+}
+
+body{
+	color: #000000;
+	background-color: #80dfff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	width: 100%;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+	color: #4dd2ff;
+	transition: color 0.5s;
+}
+
+a:hover{
+	color: #00394d;
+}
+
+@media screen and (min-width: 721px) {
+
+	.menu {
+		display: none;
+	}
+
+	.header h1 {
+		text-align: center;
+		font-size: 64px;
+		margin: 0px;
+	}
+	
+	.nav {
+		background-color: #4dd2ff;
+		width: 100%;
+		margin: 0px;
+		float: left;
+		box-sizing: border-box;
+		display: block;
+	}
+	
+	.nav .navlink {
+		border-top: solid;
+		border-color: grey;
+		width: 25%;
+		text-align: center;
+		margin: 0px;
+		float: left;
+		box-sizing: border-box;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		transition: background-color 0.5s;
+	}
+	
+	.nav a {
+		display: block;
+		text-decoration: none;
+		color: #003300;
+		font-size: 120%;
+	}
+
+	.nav .navlink:hover {
+		background-color: #80dfff;
+	}
+	
+	/*The following are used on the home page */
+	
+	.splash {
+		padding: 10px;
+		width: 100%;
+		margin: 0px;
+		box-sizing: border-box;
+		text-align:center;
+	}
+	
+	#indexImage {
+	    width: 100%;
+		height: auto;
+	}
+	
+	.splash .information {
+		width: 100%;
+		float: left;
+		margin: 0px;
+		display: inline-block;
+		box-sizing: border-box;
+		text-align: left;
+		padding-left: 25px;
+	}
+	
+	.findus {
+		width: 75%;
+		margin: 0px;
+		display: inline-block;
+		box-sizing: border-box;
+		text-align: right;
+	}
+
+}
